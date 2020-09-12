@@ -1,0 +1,92 @@
+{
+	"id": "217ae10d-cae6-4fa8-bcf9-17ef108b97d0",
+	"name": "SP-TRAINER API",
+	"timestamp": "2020-09-12T16:56:35.353Z",
+	"collection_id": "369abbeb-86f2-4474-b6ce-e7ab68c6ae05",
+	"folder_id": "f534fb11-ce35-4322-ac80-72ee0fe51436",
+	"environment_id": "1eff210a-7040-41cb-9a71-081135685f82",
+	"totalPass": 2,
+	"totalFail": 2,
+	"results": [
+		{
+			"id": "3952d427-5a00-4db7-b295-02a1a839196b",
+			"name": "findByIdUser",
+			"url": "http://localhost:9003/notification/findbyuser/10/client",
+			"time": 3005,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Codigo de petición 200": true,
+				"Comprobar que este suaurio tenga 7 notificaciones": false
+			},
+			"testPassFailCounts": {
+				"Codigo de petición 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Comprobar que este suaurio tenga 7 notificaciones": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				3005
+			],
+			"allTests": [
+				{
+					"Codigo de petición 200": true,
+					"Comprobar que este suaurio tenga 7 notificaciones": false
+				}
+			]
+		},
+		{
+			"id": "cc4f2edf-d416-4e12-865e-f0a4fc5caaea",
+			"name": "findNewByUserId",
+			"url": "http://localhost:9003/notification/findbyusernew/10/client",
+			"time": 245,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Codigo de petición 200": true,
+				"Comprobar que este suaurio tenga 7 notificaciones nuevas": false
+			},
+			"testPassFailCounts": {
+				"Codigo de petición 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Comprobar que este suaurio tenga 7 notificaciones nuevas": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				245
+			],
+			"allTests": [
+				{
+					"Codigo de petición 200": true,
+					"Comprobar que este suaurio tenga 7 notificaciones nuevas": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3250,
+	"collection": {
+		"requests": [
+			{
+				"id": "3952d427-5a00-4db7-b295-02a1a839196b",
+				"method": "GET"
+			},
+			{
+				"id": "cc4f2edf-d416-4e12-865e-f0a4fc5caaea",
+				"method": "GET"
+			}
+		]
+	}
+}

@@ -1,0 +1,265 @@
+{
+	"id": "d0b908a2-703a-457b-9232-598aff7e4ad3",
+	"name": "SP-TRAINER API",
+	"timestamp": "2020-09-12T16:57:35.787Z",
+	"collection_id": "369abbeb-86f2-4474-b6ce-e7ab68c6ae05",
+	"folder_id": "dabb24b0-1366-440a-a8f8-5ebe9b19b366",
+	"environment_id": "1eff210a-7040-41cb-9a71-081135685f82",
+	"totalPass": 11,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "0151316b-0d5e-4e6b-a63b-0908784a7d7c",
+			"name": "findGroupTrainer",
+			"url": "http://localhost:9003/grouptrainer/findByTrainer/1",
+			"time": 5831,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Codigo de petición 200": true,
+				"Comprobar que el usuario sea luigi": true
+			},
+			"testPassFailCounts": {
+				"Codigo de petición 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Comprobar que el usuario sea luigi": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5831
+			],
+			"allTests": [
+				{
+					"Codigo de petición 200": true,
+					"Comprobar que el usuario sea luigi": true
+				}
+			]
+		},
+		{
+			"id": "b89bd675-2b92-4597-ba92-c6b77c564173",
+			"name": "findGroupMember",
+			"url": "http://localhost:9003/grouptrainer/findbymember/10",
+			"time": 243,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Codigo de petición 200": true,
+				"Comprobar que uno de los grupos sean Artes Marciales": true
+			},
+			"testPassFailCounts": {
+				"Codigo de petición 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Comprobar que uno de los grupos sean Artes Marciales": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				243
+			],
+			"allTests": [
+				{
+					"Codigo de petición 200": true,
+					"Comprobar que uno de los grupos sean Artes Marciales": true
+				}
+			]
+		},
+		{
+			"id": "9525a6ea-b15f-4bc4-a61a-7851c92089a9",
+			"name": "findSessionByGroupId",
+			"url": "http://localhost:9003/grouptrainer/session/findbydgroupid/1/1",
+			"time": 283,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Codigo de petición 200": true,
+				"Comprobar que este grupo tenga 3 sesiones": true
+			},
+			"testPassFailCounts": {
+				"Codigo de petición 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Comprobar que este grupo tenga 3 sesiones": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				283
+			],
+			"allTests": [
+				{
+					"Codigo de petición 200": true,
+					"Comprobar que este grupo tenga 3 sesiones": true
+				}
+			]
+		},
+		{
+			"id": "920f1484-ca3c-41e0-b592-9eddd94aec13",
+			"name": "update",
+			"url": "http://localhost:9003/grouptrainer/update",
+			"time": 245,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Codigo de petición 200": true
+			},
+			"testPassFailCounts": {
+				"Codigo de petición 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				245
+			],
+			"allTests": [
+				{
+					"Codigo de petición 200": true
+				}
+			]
+		},
+		{
+			"id": "4483b6fb-3bd4-4775-8ed6-592a39fafca9",
+			"name": "publish",
+			"url": "http://localhost:9003/grouptrainer/publish/1/1",
+			"time": 315,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Codigo de petición 200": true
+			},
+			"testPassFailCounts": {
+				"Codigo de petición 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				315
+			],
+			"allTests": [
+				{
+					"Codigo de petición 200": true
+				}
+			]
+		},
+		{
+			"id": "34ef3437-4798-456d-9653-b23f9f6e4d2e",
+			"name": "findMembersByGroupIdAndState",
+			"url": "http://localhost:9003/member/findmemberbygroupidandstate/1/ACTIVE",
+			"time": 608,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Codigo de petición 200": true,
+				"Comprobar el grupo tenga 1 miembros activos": false
+			},
+			"testPassFailCounts": {
+				"Codigo de petición 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Comprobar el grupo tenga 1 miembros activos": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				608
+			],
+			"allTests": [
+				{
+					"Codigo de petición 200": true,
+					"Comprobar el grupo tenga 1 miembros activos": false
+				}
+			]
+		},
+		{
+			"id": "464e4f0b-43f7-42e1-83c9-1fd571b75754",
+			"name": "findRegistrationRequestByGroupIdandState",
+			"url": "http://localhost:9003/member/findregistrationrequestbygroupidandstate/1/ACCEPT",
+			"time": 500,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Codigo de petición 200": true,
+				"Comprobar el grupo tenga 2 solicitudes aprobadas": true
+			},
+			"testPassFailCounts": {
+				"Codigo de petición 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Comprobar el grupo tenga 2 solicitudes aprobadas": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				500
+			],
+			"allTests": [
+				{
+					"Codigo de petición 200": true,
+					"Comprobar el grupo tenga 2 solicitudes aprobadas": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 8025,
+	"collection": {
+		"requests": [
+			{
+				"id": "0151316b-0d5e-4e6b-a63b-0908784a7d7c",
+				"method": "GET"
+			},
+			{
+				"id": "b89bd675-2b92-4597-ba92-c6b77c564173",
+				"method": "GET"
+			},
+			{
+				"id": "9525a6ea-b15f-4bc4-a61a-7851c92089a9",
+				"method": "GET"
+			},
+			{
+				"id": "920f1484-ca3c-41e0-b592-9eddd94aec13",
+				"method": "PUT"
+			},
+			{
+				"id": "4483b6fb-3bd4-4775-8ed6-592a39fafca9",
+				"method": "PUT"
+			},
+			{
+				"id": "34ef3437-4798-456d-9653-b23f9f6e4d2e",
+				"method": "GET"
+			},
+			{
+				"id": "464e4f0b-43f7-42e1-83c9-1fd571b75754",
+				"method": "GET"
+			}
+		]
+	}
+}

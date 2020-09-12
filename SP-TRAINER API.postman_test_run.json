@@ -1,0 +1,185 @@
+{
+	"id": "9a7d5ad9-5b2c-4c9f-986e-f69cd2564d50",
+	"name": "SP-TRAINER API",
+	"timestamp": "2020-09-12T16:53:16.905Z",
+	"collection_id": "369abbeb-86f2-4474-b6ce-e7ab68c6ae05",
+	"folder_id": "58eaaa45-efbf-4260-8403-cb7dd3ba55f1",
+	"environment_id": "1eff210a-7040-41cb-9a71-081135685f82",
+	"totalPass": 6,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "b31d81bd-ebc0-4b8e-aac1-ed1ea37f36f5",
+			"name": "finByUsername",
+			"url": "http://localhost:9003/user/findbyuser?user=luigi",
+			"time": 4695,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Codigo de petición 200": true,
+				"Comprobar que el usuario sea luigi": true
+			},
+			"testPassFailCounts": {
+				"Codigo de petición 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Comprobar que el usuario sea luigi": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4695
+			],
+			"allTests": [
+				{
+					"Codigo de petición 200": true,
+					"Comprobar que el usuario sea luigi": true
+				}
+			]
+		},
+		{
+			"id": "4129edad-a349-454b-aa06-81c1bf9c785b",
+			"name": "noFindByUsername",
+			"url": "http://localhost:9003/user/findbyuser?user=usernoextis",
+			"time": 248,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Codigo de petición 404": true
+			},
+			"testPassFailCounts": {
+				"Codigo de petición 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				248
+			],
+			"allTests": [
+				{
+					"Codigo de petición 404": true
+				}
+			]
+		},
+		{
+			"id": "a326806c-5dcb-42ff-b580-d2a95df941aa",
+			"name": "finAll",
+			"url": "http://localhost:9003/user/all",
+			"time": 302,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Codigo de petición 200": true
+			},
+			"testPassFailCounts": {
+				"Codigo de petición 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				302
+			],
+			"allTests": [
+				{
+					"Codigo de petición 200": true
+				}
+			]
+		},
+		{
+			"id": "fb62f620-efd2-43eb-a829-4f4137f2f520",
+			"name": "save",
+			"url": "http://localhost:9003/user/save",
+			"time": 298,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Codigo de petición 200": true,
+				"Comprobar que el usuario sea luigi": true
+			},
+			"testPassFailCounts": {
+				"Codigo de petición 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Comprobar que el usuario sea luigi": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				298
+			],
+			"allTests": [
+				{
+					"Codigo de petición 200": true,
+					"Comprobar que el usuario sea luigi": true
+				}
+			]
+		},
+		{
+			"id": "62be7857-6b59-4d63-9028-3dcbd8cc28cc",
+			"name": "validationUserExiste",
+			"url": "http://localhost:9003/user/save",
+			"time": 316,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Codigo de petición 409, usuario ya existe": false
+			},
+			"testPassFailCounts": {
+				"Codigo de petición 409, usuario ya existe": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				316
+			],
+			"allTests": [
+				{
+					"Codigo de petición 409, usuario ya existe": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 5859,
+	"collection": {
+		"requests": [
+			{
+				"id": "b31d81bd-ebc0-4b8e-aac1-ed1ea37f36f5",
+				"method": "GET"
+			},
+			{
+				"id": "4129edad-a349-454b-aa06-81c1bf9c785b",
+				"method": "GET"
+			},
+			{
+				"id": "a326806c-5dcb-42ff-b580-d2a95df941aa",
+				"method": "GET"
+			},
+			{
+				"id": "fb62f620-efd2-43eb-a829-4f4137f2f520",
+				"method": "POST"
+			},
+			{
+				"id": "62be7857-6b59-4d63-9028-3dcbd8cc28cc",
+				"method": "POST"
+			}
+		]
+	}
+}
